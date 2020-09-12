@@ -1,0 +1,12 @@
+.product{
+    position: relative;
+}
+.price{
+    position: absolute;
+    background-color: tomato;
+    top: 0;
+    right: 20%;
+    padding: 15px;
+    font-weight: 600px;
+    color: white;
+}

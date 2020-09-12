@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+
+<body>
+
+    <div class="container py-3">
+
+        <div class="form-group">
+            <label>ProductName :</label>
+            <input id="ProductNameInp" class="form-control">
+            <small class="text-muted">must be 8-12 character and first capital</small>
+        </div>
+        <div class="form-group">
+            <label>ProductPrice :</label>
+            <input id="ProductPriceInp" class="form-control">
+            <small class="text-muted">must be number</small>
+        </div>
+        <div class="form-group">
+            <label>ProductCategory :</label>
+            <input id="ProductCategoryInp" class="form-control">
+           
+        </div>
+        <div class="form-group">
+            <label>ProductDesc :</label>
+            <textarea id="ProductDescInp" class="form-control"></textarea>
+            
+        </div>
+        <button onclick="AddProduct()" id="my-btn" class="btn btn-outline-info">Add Product</button>
+    </div>
+
+
+    <div class="container-fluid">
+        <h2 class="text-center mb-4">Our Product</h2>
+        <input onkeyup="searchProducts(this.value)" placeholder="Search" class="form-control w-50 m-auto">
+        <div class="row mt-5" id="productsRow">
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="my-data" class="row">
+
+
+
+        </div>
+
+    </div>
+
+    <script src="CRDS.js"></script>
+</body>
+
+</html>
